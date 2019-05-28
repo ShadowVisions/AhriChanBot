@@ -46,7 +46,7 @@ public class Bot extends ListenerAdapter
         try
         {
             JDA jda = new JDABuilder(AccountType.BOT)
-                    .setToken("MTgxODgzNDExNTE2ODgyOTQ0.DIX_Wg.taNj999POtaR1xbHg06T8IwcIyo")           //The token of the account that is logging in.
+                    .setToken(null)           //The token of the account that is logging in.
                     .addEventListener(new Bot())  //An instance of a class that will handle events.
                     .buildBlocking();  //There are 2 ways to login, blocking vs async. Blocking guarantees that JDA will be completely loaded.
         }
